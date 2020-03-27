@@ -1,0 +1,44 @@
+body {
+
+ display: block;
+  margin: auto;
+  padding-top: 20px;
+
+}
+
+P { 
+text-align: center; 
+}
+
+H1 { 
+text-align: center; 
+
+}
+
+
+section {
+  text-align: center;
+}
+
+button
+{
+  text-align: center;
+  margin: auto;
+  display: inline-block;
+
+
+}
+
+blockquote{
+  text-align: center; 
+
+}
+
+li {
+list-style: none;
+}
+
+fieldset {
+  max-width: 600px;
+  margin: auto;
+}
