@@ -42,3 +42,18 @@ fieldset {
   max-width: 600px;
   margin: auto;
 }
+
+
+#answerFeedbackWrong {
+  border: 1px solid black ;
+  width: 300px;
+  display: inline-block;
+  margin-left: 340px;
+  margin-top: 25px;
+}
+
+ #answerFeedbackRight  {
+  border: 1px solid black ;
+  width: 300px;
+  display: inline-block;
+}

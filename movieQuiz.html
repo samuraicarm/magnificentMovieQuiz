@@ -4,17 +4,17 @@
         <link rel="stylesheet" href="main.css">
       </head>
 <body>
-<section>
+<section id = "startScreen">
 <h1>Magnificent Movie Quote Quiz</h1>
 <p>Test your movie knowledge. Can you identify these famous movie quotes?</p>
-<button class="play" type="button"> Let's play! </button>
+<button id="play" type="button"> Let's play! </button>
 </section>
 
-<div id="movieQuiz">
+<section id="movieQuiz">
 
  <fieldset>
     <legend>Magnificent Movie Quote Quiz</legend>
-    <p> Question 1</p>
+    <p> Question 1 out of 10</p>
 <blockquote>"This is a movie Quote"</blockquote>
     <ul>
    <li> <label> 
@@ -33,14 +33,33 @@
         <input id="choice-four" input type="radio"> Choice  Four
     </label></li>
     </ul>
-    <button class="submit" type="button"> Next Question</button>
+    <button id="submitAnswer" type="button"> Submit</button>
 </fieldset>
 
-</div>
+</section>
 
-<div id ="movieQuizResults">
+<section id = "answerFeedbackWrong">
+    <p> WRONG! </p>
+    <p>The correct answer is</p>
+    <p> Movie Title</p>
+    <button id="nextQuestion" type="button"> Next Question</button>
+</section>
 
-<p> Thanks for taking the Magnificant Movie Quiz. You scored x out of 10!</p>
-</div>
-<body>
+<section id = "answerFeedbackRight">
+    <p> CORRECT! </p>
+    <p>The correct answer is</p>
+    <p> Movie Title</p>
+    <button id="nextQuestion" type="button"> Next Question</button>
+</section>
+
+
+<section id ="movieQuizResults">
+
+<p> Thanks for taking the Magnificant Movie Quiz. </p>
+<p>You scored x out of 10!</p>
+<p>Your rank: Movie Savant</p>
+<button id="playAgain" type="button"> Play Again</button>
+</section>
+
+</body>
 </html>
