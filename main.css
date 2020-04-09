@@ -193,8 +193,8 @@ padding-bottom: 5px;
   h1 {
     font-size: 20px;
     text-align: center;
-    width: 75%;
-    margin-left: 120px;
+    width: 50%;
+    margin-left: 100px;
   }
 
   .quizContainer {
@@ -207,4 +207,15 @@ padding-bottom: 5px;
     text-align: center;
   }
 
+  p.introText {
+    padding-top: 5px;
+  }
+
+  .question {
+    font-size: 12px;
+  }
+  
+  .option {
+  width: 200px;
+  }
 }
