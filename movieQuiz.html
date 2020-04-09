@@ -1,17 +1,59 @@
 
 <html>
     <head>
+        <title>Magnificant Movie Quiz</title>
         <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300i,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap" rel="stylesheet">
       </head>
-<body>
-<section id = "startScreen">
+        <body>
+            <h1> Magnificent Movie Quiz</h1>
+            <section id="movieQuiz" class = "quizContainer">
+                  
+                    <p id = "introText" class = "introText">How well do you know some of the world's most popular movies? Test your knowledge of famous movie quotes!</p>
+                    <section id = "questionHolder" class = "questionHolder" style="display:none;">
+                        <div id = "questionCount"><p id ="questionNumber"></p> </div>
+                     <section id = "question" class="question"></section>
+                        <label class="option"><input type="radio" name="option" value="1"/><span id="optionOne"></span></label>
+                        <label class="option"><input type="radio" name="option" value="2"/><span id="optionTwo"></span></label>
+                        <label class="option"><input type="radio" name="option" value="3"/><span id="optionThree"></span></label>
+                        <label class="option"><input type="radio" name="option" value="4"/><span id="optionFour"></span></label>
+                        <div id = "nextButtonControl">
+                         <button id="nextButton" class="next-button" onclick="displayNextQuestion();">Next Quote</button>
+                         <div>
+                         </section>
+
+                <section id = "controls">
+                <button id="startButton" class="startbutton">Start Quiz</button> </section>
+          </section>
+
+         
+
+            <section id="result" class="quizContainer" style="display:none;">
+                <p> Thanks for playing the Magnificant Movie Quote Quiz!</p>
+                <p id="quizScore">Your Score:</p>
+                <p id="movieRank"></p>
+            <div id = "playButtonControl">
+                <button id="playButton" class="playbutton">Play Again</button>
+            </div>
+             </section>
+  <script
+   src="https://code.jquery.com/jquery-3.4.1.min.js"
+   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+   crossorigin="anonymous"></script>
+    <script src="movieQuestions.js"></script>
+    <script src="index.js"></script>
+</body>
+
+
+</html>
+
+    <!--
+  <section id = "startScreen">
 <h1>Magnificent Movie Quote Quiz</h1>
 <p>Test your movie knowledge. Can you identify these famous movie quotes?</p>
 <button id="play" type="button"> Let's play! </button>
 </section>
-
-<section id="movieQuiz">
-
  <fieldset>
     <legend>Magnificent Movie Quote Quiz</legend>
     <p> Question 1 out of 10</p>
@@ -36,30 +78,21 @@
     <button id="submitAnswer" type="button"> Submit</button>
 </fieldset>
 
-</section>
-
-<section id = "answerFeedbackWrong">
+<section id = "answerFeedback">
     <p> WRONG! </p>
     <p>The correct answer is</p>
     <p> Movie Title</p>
     <button id="nextQuestion" type="button"> Next Question</button>
-</section>
-
-<section id = "answerFeedbackRight">
     <p> CORRECT! </p>
     <p>The correct answer is</p>
     <p> Movie Title</p>
     <button id="nextQuestion" type="button"> Next Question</button>
 </section>
 
-
-<section id ="movieQuizResults">
-
 <p> Thanks for taking the Magnificant Movie Quiz. </p>
 <p>You scored x out of 10!</p>
 <p>Your rank: Movie Savant</p>
 <button id="playAgain" type="button"> Play Again</button>
-</section>
+-->
 
-</body>
-</html>
+

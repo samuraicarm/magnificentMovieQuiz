@@ -1,59 +1,148 @@
+
 body {
+  font-family: 'Lato', sans-serif;
+  background: #000000;
+}
 
- display: block;
-  margin: auto;
+.quizContainer{
+  height: 445px;
+  width: 650px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: #ffffff;
+  padding: 20px;
+  border: 1px solid #808080;
+  box-shadow: 0 0 1px 1px;
+}
+
+.title {
   padding-top: 20px;
-
+  text-align: center;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
-P { 
-text-align: center; 
+.question {
+  padding: 10px;
+  font-size: 22px;
+  border-radius: 20px;
+  margin: 10px 0 10px;
+  color:#000000;
 }
 
-H1 { 
-text-align: center; 
-
+.option {
+width: 300px;
+display: inline-block;
+padding: 10px 0 10px 15px;
+vertical-align: middle;
+margin: 10px 0 10px 10px;
+color: #000000;
+border-radius: 20px;
 }
 
+.option:hover {
+  background: #FFFF00;
+  color:   #000000;
+}
 
-section {
+.next-button {
+  background:#808080;
+  color: #ffffff;
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  float: right;
+  margin: 10px;
+}
+
+.next-button:hover {
+  background:#008000;
+  color: #ffffff;
+}
+
+.result{
+  height: 100px;
+  text-align: center;
+  font-size: 75px;
+}
+
+p {
+  font-size: 25px;
   text-align: center;
 }
 
-button
-{
+p.introText {
+  padding-top: 120px;
+  font-size: 25px;
   text-align: center;
-  margin: auto;
-  display: inline-block;
+}
 
+#questionCount {
+  display: flex; 
+  justify-content: left; 
+  padding-bottom: -10px;
+  
+}
+
+#questionCount p {
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 40px;
+  padding-top: 20px;
+  font-family: 'Bungee Shade';
+}
+
+
+.option input:checked .option{
+  color:  #000000;
+}
+
+#controls {
+  display: flex; 
+  justify-content: center; 
+}
+
+.startButton {
+  background:#008000;
+  color: #ffffff;
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  margin: 10px;
 
 }
 
-blockquote{
-  text-align: center; 
+#playButtonControl {
+  display: flex; 
+  justify-content: center; 
+}
+
+#nextButtonControl {
+  display: flex; 
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.playButton  {
+  background:#008000;
+  color: #ffffff;
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  float: right;
+  margin: 10px;
 
 }
 
-li {
-list-style: none;
-}
 
-fieldset {
-  max-width: 600px;
-  margin: auto;
-}
+ 
 
-
-#answerFeedbackWrong {
-  border: 1px solid black ;
-  width: 300px;
-  display: inline-block;
-  margin-left: 340px;
-  margin-top: 25px;
-}
-
- #answerFeedbackRight  {
-  border: 1px solid black ;
-  width: 300px;
-  display: inline-block;
-}
