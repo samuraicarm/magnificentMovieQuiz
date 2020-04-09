@@ -21,12 +21,14 @@ body {
   box-shadow: 0 0 1px 1px;
 }
 
-.title {
+.header {
+  padding-bottom: 10px;
+}
+
+.titleText{
   padding-top: 20px;
   text-align: center;
-  font-size: 36px;
-  text-transform: uppercase;
-  color: #000000;
+  
 }
 
 .question {
@@ -147,7 +149,7 @@ h1 {
 
 }
 
-
+/*responsive design for medium screens */
 @media all and (max-width: 660px) {
 
   h1 {
@@ -177,5 +179,19 @@ width: 250px;
 .next-button {
 padding-bottom: 5px;
 }
+}
+
+/*responsive design for medium screens */
+@media all and (max-width: 320px) {
+
+  .quizContainer {
+  width: 75%;
+  height: 75%;
+  }
+
+  p {
+    font-size: 12px;
+    text-align: center;
+  }
 
 }
