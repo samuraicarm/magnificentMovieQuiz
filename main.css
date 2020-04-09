@@ -181,7 +181,7 @@ padding-bottom: 5px;
 }
 }
 
-/*responsive design for medium screens */
+/*responsive design for small screens */
 @media all and (max-width: 320px) {
 
   body {
@@ -190,8 +190,8 @@ padding-bottom: 5px;
   align-items: center;
   }
 
-  .titleText {
-  display: none;
+  #titleText {
+ visibility: hidden;
   }
 
   h1 {
