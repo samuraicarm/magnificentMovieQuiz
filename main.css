@@ -191,9 +191,7 @@ padding-bottom: 5px;
   }
 
   .header {
-    flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: none;
   }
 
   h1 {
