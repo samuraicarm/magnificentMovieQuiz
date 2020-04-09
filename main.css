@@ -1,4 +1,8 @@
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   background: #000000;
@@ -144,5 +148,34 @@ h1 {
 }
 
 
- 
+@media all and (max-width: 660px) {
 
+  h1 {
+    font-size: 25px;
+    text-align: center;
+    width: 250px;
+    margin-left: 120px;
+  }
+
+ .quizContainer {
+ padding-top: 10px;
+   width: 60%;
+   height: 470px;
+ }
+ p.introText {
+   padding-top: 30px;
+ }
+
+.question {
+  font-size: 15px;
+}
+
+.option {
+width: 250px;
+}
+
+.next-button {
+padding-bottom: 5px;
+}
+
+}
