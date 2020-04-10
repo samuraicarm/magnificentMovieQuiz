@@ -8,6 +8,56 @@ body {
   background: #000000;
 }
 
+/*container to hold title of quiz */
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 40px;
+  padding-top: 20px;
+  font-family: 'Bungee Shade';
+}
+
+/* intro section */
+p {
+  font-size: 25px;
+  text-align: center;
+}
+
+p.introText {
+  padding-top: 120px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.playButton  {
+  background:#008000;
+  color: #ffffff;
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  float: right;
+  margin: 10px;
+
+}
+
+.startButton {
+  background:#008000;
+  color: #ffffff;
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  margin: 10px;
+
+}
+
+#playButtonControl {
+  display: flex; 
+  justify-content: center; 
+}
+
+
+/*all components of the quiz*/
 .quizContainer{
   height: 445px;
   width: 650px;
@@ -21,15 +71,6 @@ body {
   box-shadow: 0 0 1px 1px;
 }
 
-.header {
-  padding-bottom: 10px;
-}
-
-.titleText{
-  padding-top: 20px;
-  text-align: center;
-  
-}
 
 .question {
   padding: 10px;
@@ -54,6 +95,7 @@ border-radius: 20px;
   color:   #000000;
 }
 
+/* quiz controls */
 .next-button {
   background:#808080;
   color: #ffffff;
@@ -75,36 +117,18 @@ border-radius: 20px;
   font-size: 75px;
 }
 
-p {
-  font-size: 25px;
-  text-align: center;
-}
-
-p.introText {
-  padding-top: 120px;
-  font-size: 25px;
-  text-align: center;
-}
+/* show how many questions remain */
 
 #questionCount {
   display: flex; 
   justify-content: left; 
   padding-bottom: -10px;
-  
 }
 
 #questionCount p {
   font-size: 15px;
   font-family: 'Lato', sans-serif;
   font-style: italic;
-}
-
-h1 {
-  text-align: center;
-  color: #ffffff;
-  font-size: 40px;
-  padding-top: 20px;
-  font-family: 'Bungee Shade';
 }
 
 
@@ -117,20 +141,6 @@ h1 {
   justify-content: center; 
 }
 
-.startButton {
-  background:#008000;
-  color: #ffffff;
-  width: 100px;
-  height: 35px;
-  border-radius: 20px;
-  margin: 10px;
-
-}
-
-#playButtonControl {
-  display: flex; 
-  justify-content: center; 
-}
 
 #nextButtonControl {
   display: flex; 
@@ -138,47 +148,57 @@ h1 {
   padding-top: 5px; 
 }
 
-.playButton  {
-  background:#008000;
-  color: #ffffff;
-  width: 100px;
-  height: 35px;
-  border-radius: 20px;
-  float: right;
-  margin: 10px;
+/*responsive design for larger screens */
+@media all and (max-width: 872px) {
 
-}
+  .titleText h1 {
+    font-size: 25px;
+    text-align: center;
+    width: 400px;
+    margin-left: 200px;
+  }
 
 /*responsive design for medium screens */
-@media all and (max-width: 660px) {
+@media all and (max-width: 871px) and (min-width: 321px) {
 
+  body {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #titleText {
+    top:50%;
+    left:50%
+  }
+
+  }
   h1 {
     font-size: 25px;
     text-align: center;
-    width: 250px;
-    margin-left: 120px;
   }
+  
 
  .quizContainer {
- padding-top: 10px;
-   width: 60%;
-   height: 470px;
+    padding-top: 10px;
+    width: 60%;
+    height: 470px;
  }
+
  p.introText {
-   padding-top: 30px;
+    padding-top: 30px;
  }
 
 .question {
-  font-size: 15px;
+    font-size: 15px;
 }
 
 .option {
-width: 250px;
+    width: 250px;
 }
 
 .next-button {
-padding-bottom: 5px;
-}
+    padding-bottom: 5px;
+  }
 }
 
 /*responsive design for small screens */
