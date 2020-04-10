@@ -46,8 +46,8 @@ function displayQuestion(questionIndex) {
     optionThree.textContent = quote.optionThree;
     optionFour.textContent = quote.optionFour;
 
-    document.getElementById("questionNumber").innerHTML = "Question " + (questionIndex + 1) + " of " + totalMovieQuestions;
-
+    document.getElementById("questionNumber").innerHTML = "Question " + (questionIndex + 1) + " of " + totalMovieQuestions + "" + " | | " + " " + "Your score:" + " " + score;
+  
 };
 
 

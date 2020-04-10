@@ -1,3 +1,6 @@
+
+//questions and answers for the quiz
+
 let questions = [
     {
        "question": "\"Wait A Minute, Doc. Are You Telling Me You Built A Time Machine...Out Of A DeLorean?\"",
