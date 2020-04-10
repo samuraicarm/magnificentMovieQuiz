@@ -52,50 +52,50 @@ function displayQuestion(questionIndex) {
 
 
 //this function displays next question and keeps track of score then displays results
-function displayNextQuestion () {
+function displayNextQuestion() {
 
-let selectedAnswer = document.querySelector('input[type=radio]:checked');
-if (!selectedAnswer){
-    alert('Whoops! Please select an answer below.');
-    return;
-}
+    let selectedAnswer = document.querySelector('input[type=radio]:checked');
+    if (!selectedAnswer) {
+        alert('Whoops! Please select an answer below.');
+        return;
+    }
 
-let answer = selectedAnswer.value;
-if(questions[currentQuestion].answer === answer){
-   score ++;
-}
+    let answer = selectedAnswer.value;
+    if (questions[currentQuestion].answer === answer) {
+        score++;
+    }
 
-selectedAnswer.checked = false;
-currentQuestion++;
+    selectedAnswer.checked = false;
+    currentQuestion++;
 
-if(currentQuestion == totalMovieQuestions -1){
-    nextButton.textContent= 'Finish';
-}
-if(currentQuestion == totalMovieQuestions ) {
-    container.style.display = 'none';
-    resultCont.style.display= '';
-    let scoreText = $("#quizScore").text();
-   $("#quizScore").text(scoreText + " " + score + " out of" + " " + totalMovieQuestions + " correct.");
+    if (currentQuestion == totalMovieQuestions - 1) {
+        nextButton.textContent = 'Finish';
+    }
+    if (currentQuestion == totalMovieQuestions) {
+        container.style.display = 'none';
+        resultCont.style.display = '';
+        let scoreText = $("#quizScore").text();
+        $("#quizScore").text(scoreText + " " + score + " out of" + " " + totalMovieQuestions + " correct.");
 
-   let messages = ["Watch more movies!", "Movie Noob", "Movie Lover","Movie Savant"];
-   let range = 0;
-       if (score <= 3) {
-           range = 0;
-       }
-       
-      if (score > 3 && score <= 6) {
-       
-           range = 1;
-       }
-     if (score > 6 && score <= 9) {
-       
-       range = 2;
-       }
-   
-   if (score === 10) {
-       range = 3;
-   }
-   document.getElementById("movieRank").innerHTML = "Your rank:" + " " + messages[range];
+        let messages = ["Watch more movies!", "Movie Noob", "Movie Lover", "Movie Savant"];
+        let range = 0;
+        if (score <= 3) {
+            range = 0;
+        }
+
+        if (score > 3 && score <= 6) {
+
+            range = 1;
+        }
+        if (score > 6 && score <= 9) {
+
+            range = 2;
+        }
+
+        if (score === 10) {
+            range = 3;
+        }
+        document.getElementById("movieRank").innerHTML = "Your rank:" + " " + messages[range];
     }
     displayQuestion(currentQuestion);
 }
